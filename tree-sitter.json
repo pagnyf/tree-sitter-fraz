@@ -6,9 +6,8 @@
       "camelcase": "Fraz",
       "title": "Fraz",
       "scope": "source.fraz",
-      "file-types": [
-        "fraz"
-      ],
+      "file-types": ["fraz"],
+      "highlights": "queries/highlights.scm",
       "injection-regex": "^fraz$",
       "class-name": "TreeSitterFraz"
     }
