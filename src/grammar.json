@@ -14,27 +14,56 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "integer"
+          "name": "object"
         },
         {
           "type": "STRING",
-          "value": "+"
+          "value": "has"
         },
         {
           "type": "SYMBOL",
-          "name": "integer"
+          "name": "attribute"
         }
       ]
     },
-    "integer": {
+    "object": {
+      "type": "PATTERN",
+      "value": "[A-Za-z]+"
+    },
+    "attribute": {
+      "type": "PATTERN",
+      "value": "[a-z]+"
+    },
+    "comment": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "# "
+        },
+        {
+          "type": "PATTERN",
+          "value": ".*"
+        }
+      ]
+    },
+    "integer_literal": {
       "type": "PATTERN",
       "value": "\\d+"
+    },
+    "string_literal": {
+      "type": "PATTERN",
+      "value": "[a-z]+"
     }
   },
   "extras": [
     {
       "type": "PATTERN",
       "value": "\\s"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "comment"
     }
   ],
   "conflicts": [],

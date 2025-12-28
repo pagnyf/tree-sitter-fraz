@@ -1,1 +1,3 @@
-(integer) @number
+(object) @function
+(attribute) @attribute
+(comment) @comment

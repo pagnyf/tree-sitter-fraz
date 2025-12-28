@@ -1,5 +1,11 @@
 [
   {
+    "type": "comment",
+    "named": true,
+    "extra": true,
+    "fields": {}
+  },
+  {
     "type": "expression",
     "named": true,
     "fields": {},
@@ -8,7 +14,11 @@
       "required": true,
       "types": [
         {
-          "type": "integer",
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "object",
           "named": true
         }
       ]
@@ -31,11 +41,19 @@
     }
   },
   {
-    "type": "+",
+    "type": "# ",
     "named": false
   },
   {
-    "type": "integer",
+    "type": "attribute",
+    "named": true
+  },
+  {
+    "type": "has",
+    "named": false
+  },
+  {
+    "type": "object",
     "named": true
   }
 ]

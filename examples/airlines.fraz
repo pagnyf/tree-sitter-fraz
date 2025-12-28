@@ -1,0 +1,25 @@
+<!-- Test -->
+# This is a comment
+
+Passenger has name. Name is between 2 and 35 characters.
+Passenger has height. Height is between 0.0 and 3.0 meters.
+Passenger has birthdate. Birthdate is a datetime.
+Passenger has loyalty status either Bronze, Silver, Gold.
+Passenger has country.
+Flight has:
+    departure datetime. Departure datetime is before 01/12/3000 00:00.
+    departure datetime. Departure datetime is before 31/12/3000 23:59:43.453.
+    arrival datetime. Arrival datetime is before 01/01/3000 00:00.
+    departure airport. Departure airport is an Airport.
+    arrival airport. Arrival airport is an Airport.
+    passengers. Passengers are multiple Passenger.
+Airport has:
+    code of 4 characters.
+    city between 2 and 35 characters
+    country
+Country has:
+    name between 2 and 56 characters
+    code of 2 characters
+    continent
+Continent has:
+    name either Africa, Asia, Europe, North America, "South America", Oceania
