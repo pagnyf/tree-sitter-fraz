@@ -1,3 +1,5 @@
 # Test
 
-Passenger has name has tutu
+Passenger has name
+Passenger has birthdate
+birthdate is datetime

@@ -6,29 +6,68 @@
       "type": "REPEAT",
       "content": {
         "type": "SYMBOL",
-        "name": "expression"
+        "name": "definition"
       }
     },
-    "expression": {
-      "type": "SEQ",
+    "definition": {
+      "type": "CHOICE",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "object"
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "object"
+            },
+            {
+              "type": "STRING",
+              "value": "has"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            }
+          ]
         },
         {
-          "type": "STRING",
-          "value": "has"
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            },
+            {
+              "type": "STRING",
+              "value": "is"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type"
+            }
+          ]
         },
         {
-          "type": "SYMBOL",
-          "name": "attribute"
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            },
+            {
+              "type": "STRING",
+              "value": "either"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            }
+          ]
         }
       ]
     },
     "object": {
       "type": "PATTERN",
-      "value": "[A-Za-z]+"
+      "value": "[A-Z][a-z]*"
     },
     "attribute": {
       "type": "PATTERN",
@@ -46,6 +85,10 @@
           "value": ".*"
         }
       ]
+    },
+    "type": {
+      "type": "PATTERN",
+      "value": "datetime|integer"
     },
     "integer_literal": {
       "type": "PATTERN",

@@ -17,11 +17,17 @@ export default grammar({
 
   rules: {
     // TODO: add the actual grammar rules
-    source_file: ($) => repeat($.expression),
-    expression: ($) => seq($.object, "has", $.attribute),
-    object: ($) => /[A-Za-z]+/,
+    source_file: ($) => repeat($.definition),
+    definition: ($) =>
+      choice(
+        seq($.object, "has", $.attribute),
+        seq($.attribute, "is", $.type),
+        seq($.attribute, "either", $.attribute),
+      ),
+    object: ($) => /[A-Z][a-z]*/,
     attribute: ($) => /[a-z]+/,
     comment: ($) => seq("# ", /.*/),
+    type: ($) => /datetime|integer/,
     integer_literal: ($) => /\d+/,
     string_literal: ($) => /[a-z]+/,
   },
