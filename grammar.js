@@ -21,10 +21,10 @@ export default grammar({
     definition: ($) =>
       choice(
         seq($.object, "has", $.attribute),
-        seq($.attribute, "is", $.type),
-        seq($.attribute, "either", $.attribute),
-        seq($.object, "test", $.attribute),
-        seq($.string_literal, "string", $.string_literal),
+        //seq($.attribute, "is", $.type),
+        //seq($.attribute, "either", $.attribute),
+        //seq($.object, "test", $.attribute),
+        seq($.integer_literal, "string", $.string_literal),
       ),
     object: ($) => /[A-Z][a-z]*/,
     attribute: ($) => /[a-z]+/,

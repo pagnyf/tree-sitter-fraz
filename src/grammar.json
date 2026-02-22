@@ -34,58 +34,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "attribute"
-            },
-            {
-              "type": "STRING",
-              "value": "is"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "type"
-            }
-          ]
-        },
-        {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "attribute"
-            },
-            {
-              "type": "STRING",
-              "value": "either"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "attribute"
-            }
-          ]
-        },
-        {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "object"
-            },
-            {
-              "type": "STRING",
-              "value": "test"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "attribute"
-            }
-          ]
-        },
-        {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "string_literal"
+              "name": "integer_literal"
             },
             {
               "type": "STRING",

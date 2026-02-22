@@ -1,5 +1,5 @@
-(object) @tag
+(object) @operator
 (attribute) @attribute
 (comment) @comment
-(type) @type
 (string_literal) @string
+(integer_literal) @number

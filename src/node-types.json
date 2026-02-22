@@ -23,15 +23,15 @@
           "named": true
         },
         {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
           "type": "object",
           "named": true
         },
         {
           "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "type",
           "named": true
         }
       ]
@@ -63,16 +63,12 @@
     "named": false
   },
   {
-    "type": "either",
-    "named": false
-  },
-  {
     "type": "has",
     "named": false
   },
   {
-    "type": "is",
-    "named": false
+    "type": "integer_literal",
+    "named": true
   },
   {
     "type": "object",
@@ -81,13 +77,5 @@
   {
     "type": "string",
     "named": false
-  },
-  {
-    "type": "test",
-    "named": false
-  },
-  {
-    "type": "type",
-    "named": true
   }
 ]
