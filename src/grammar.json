@@ -34,11 +34,28 @@
           "members": [
             {
               "type": "SYMBOL",
+              "name": "attribute"
+            },
+            {
+              "type": "STRING",
+              "value": "is"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
               "name": "integer_literal"
             },
             {
               "type": "STRING",
-              "value": "string"
+              "value": "either"
             },
             {
               "type": "SYMBOL",
@@ -79,7 +96,7 @@
     },
     "string_literal": {
       "type": "PATTERN",
-      "value": "[a-z]+"
+      "value": "([A-Za-z])+"
     }
   },
   "extras": [

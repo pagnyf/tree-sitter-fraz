@@ -21,16 +21,16 @@ export default grammar({
     definition: ($) =>
       choice(
         seq($.object, "has", $.attribute),
-        //seq($.attribute, "is", $.type),
-        //seq($.attribute, "either", $.attribute),
-        //seq($.object, "test", $.attribute),
-        seq($.integer_literal, "string", $.string_literal),
+        seq($.attribute, "is", $.type),
+        seq($.integer_literal, "either", $.string_literal),
       ),
+    //operator: ($) => /has|is/,
     object: ($) => /[A-Z][a-z]*/,
     attribute: ($) => /[a-z]+/,
     comment: ($) => seq("# ", /.*/),
     type: ($) => /datetime|integer/,
     integer_literal: ($) => /\d+/,
-    string_literal: ($) => /[a-z]+/,
+    string_literal: ($) => /([A-Za-z])+/,
+    //property: ($) => /000/,
   },
 });
