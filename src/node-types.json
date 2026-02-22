@@ -69,6 +69,10 @@
     "named": true
   },
   {
+    "type": "test",
+    "named": false
+  },
+  {
     "type": "type",
     "named": true
   }

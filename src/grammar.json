@@ -62,6 +62,23 @@
               "name": "attribute"
             }
           ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            },
+            {
+              "type": "STRING",
+              "value": "test"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "attribute"
+            }
+          ]
         }
       ]
     },
