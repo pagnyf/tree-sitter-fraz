@@ -1,6 +1,6 @@
-(object) @constructor
+(object) @type
 ["has" "is" "either"] @operator
-(attribute) @property
+(attribute) @attribute
 (comment) @comment
 (string_literal) @string
 (integer_literal) @number
