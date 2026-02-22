@@ -1,4 +1,4 @@
-(object) @function
+(object) @tag
 (attribute) @attribute
 (comment) @comment
 (type) @type

@@ -23,6 +23,7 @@ export default grammar({
         seq($.object, "has", $.attribute),
         seq($.attribute, "is", $.type),
         seq($.attribute, "either", $.attribute),
+        seq($.attribute, "test", $.attribute),
       ),
     object: ($) => /[A-Z][a-z]*/,
     attribute: ($) => /[a-z]+/,
