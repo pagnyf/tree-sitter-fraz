@@ -68,7 +68,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "attribute"
+              "name": "object"
             },
             {
               "type": "STRING",
@@ -77,6 +77,23 @@
             {
               "type": "SYMBOL",
               "name": "attribute"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "string_literal"
+            },
+            {
+              "type": "STRING",
+              "value": "string"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "string_literal"
             }
           ]
         }

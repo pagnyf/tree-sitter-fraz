@@ -1,5 +1,10 @@
 [
   {
+    "type": "attribute",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "comment",
     "named": true,
     "extra": true,
@@ -19,6 +24,10 @@
         },
         {
           "type": "object",
+          "named": true
+        },
+        {
+          "type": "string_literal",
           "named": true
         },
         {
@@ -45,12 +54,13 @@
     }
   },
   {
-    "type": "# ",
-    "named": false
+    "type": "string_literal",
+    "named": true,
+    "fields": {}
   },
   {
-    "type": "attribute",
-    "named": true
+    "type": "# ",
+    "named": false
   },
   {
     "type": "either",
@@ -67,6 +77,10 @@
   {
     "type": "object",
     "named": true
+  },
+  {
+    "type": "string",
+    "named": false
   },
   {
     "type": "test",
